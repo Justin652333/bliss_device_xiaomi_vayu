@@ -12,22 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Inherit common Blaze configurations
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Matrixx
-MATRIXX_BUILD_TYPE := Unofficial
-MATRIXX_MAINTAINER := Justin117
-MATRIXX_CHIPSET := SM8150
-MATRIXX_BATTERY := 5160mAh
-MATRIXX_DISPLAY := 1080x2400
-WITH_GMS := true
+# Bliss settings
+BLISS_BUILDTYPE := UNOFFICIAL
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := blaze_vayu
+PRODUCT_NAME := bliss_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
