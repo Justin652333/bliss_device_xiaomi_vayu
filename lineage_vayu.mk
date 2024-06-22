@@ -12,17 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Inherit common Blaze configurations
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_AOSP_RECOVERY := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := GXC2356
-TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
+
+# Matrixx
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_MAINTAINER := Justin117
+MATRIXX_CHIPSET := SM8150
+MATRIXX_BATTERY := 5160mAh
+MATRIXX_DISPLAY := 1080x2400
+WITH_GMS := true
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2400
